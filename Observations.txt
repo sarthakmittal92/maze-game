@@ -1,0 +1,12 @@
+Idea : Maze
+  I drew a grid over the maze that I wanted to program, and then noted the indices of all blocks in it.
+  I blocked all parts where there was a wall, and then noted where was it allowed to go right, left, up and down.
+  I made arrays of those indices, and created black blocks in places of wall.
+  I programmed the handle function such that for the position of the circle, I took the index and checked it.
+  If the pressed key was allowed, the circle moved, otherwise it stayed where it was.
+
+Inheritance:
+  The circle and rectangle class both inherit functions of widget class. I have overridden few functions, especially
+  handle, in order to bend the widget class to function as per my requirement. I also added my own functions to the
+  subclass, and then inherited that into another subclass. So Fl_Widget has 2 subclasses, MyRectangle and Shape, and 
+  Shape has 1 subclass, MyCircle.
